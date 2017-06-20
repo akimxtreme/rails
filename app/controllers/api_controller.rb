@@ -5,4 +5,10 @@ class ApiController < ApplicationController
     @theme_interests = ThemeInterest.all
     render json: @theme_interests
   end
+
+
+  def gender
+    @genders = Gender.all
+    render json: @genders
+  end
 end
